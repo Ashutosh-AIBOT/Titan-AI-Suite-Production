@@ -25,9 +25,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of the application
 COPY . .
 
-# Ensure necessary directories exist
-RUN mkdir -p database outputs/plots outputs/medium_articles outputs/research_papers outputs/exports docs
-
 # Expose Streamlit port
 EXPOSE 7860
 

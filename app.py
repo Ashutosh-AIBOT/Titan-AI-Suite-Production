@@ -4,6 +4,19 @@ import sys
 from pathlib import Path
 from dotenv import load_dotenv
 
+# --- RUNTIME DIRECTORY INITIALIZATION ---
+# Create required folders if they don't exist
+REQUIRED_DIRS = [
+    "database",
+    "outputs/plots",
+    "outputs/medium_articles",
+    "outputs/research_papers",
+    "outputs/exports",
+    "docs"
+]
+for folder in REQUIRED_DIRS:
+    os.makedirs(folder, exist_ok=True)
+
 # --- PATH CONFIG ---
 root_dir = Path(__file__).parent
 sys.path.append(str(root_dir / "Titan-Core-Intelligence"))
