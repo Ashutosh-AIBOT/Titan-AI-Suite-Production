@@ -1,4 +1,4 @@
-# --- PRODUCTION DOCKERFILE FOR TITAN AI SUITE ---
+# --- OPTIMIZED PRODUCTION DOCKERFILE ---
 FROM python:3.10-slim
 
 # Set environment variables
@@ -7,12 +7,9 @@ ENV PYTHONUNBUFFERED=1 \
     STREAMLIT_SERVER_PORT=7860 \
     STREAMLIT_SERVER_ADDRESS=0.0.0.0
 
-# Install system dependencies
+# Install minimal essential dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
-    curl \
-    software-properties-common \
-    git \
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
