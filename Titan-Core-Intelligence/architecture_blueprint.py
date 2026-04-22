@@ -48,7 +48,7 @@ knowledge_base = PDFUrlKnowledgeBase(urls=["https://example.com/file.pdf"])
 agent = Agent(knowledge_base=knowledge_base, search_knowledge=True)
 """
 
-# 🚀 PRO TIP: Use 'debug_mode=True' to see exactly what the LLM is thinking!
+# PRO TIP: Use 'debug_mode=True' to see exactly what the LLM is thinking!
 # agent = Agent(model=llm, debug_mode=True)
 
 if __name__ == "__main__":
