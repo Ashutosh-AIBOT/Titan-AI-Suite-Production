@@ -1,3 +1,13 @@
+---
+title: Titan AI Suite Production
+emoji: 🧠
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_file: app.py
+pinned: false
+---
+
 # Titan AI Suite: Unified Multi-Agent Ecosystem
 
 [![Framework: Agno](https://img.shields.io/badge/Framework-Agno-blueviolet)](https://agno.com)
