@@ -36,7 +36,7 @@ CrewAIInstrumentor().instrument()
 # --- PRE-CONFIG ---
 st.set_page_config(
     page_title="Titan Intelligence Suite",
-    page_icon="⚡",
+    page_icon="T",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -314,19 +314,19 @@ def render_mermaid(code: str):
 
 # --- ENGINE METADATA ---
 ENGINES = {
-    "🧠 Core Intelligence": {
+    "Core Intelligence": {
         "desc": "Advanced reasoning, web search & file management",
         "color": "#818cf8",
         "tag": "Cognitive",
         "loader": "get_advanced_agent"
     },
-    "📊 Analytics Pro": {
+    "Analytics Pro": {
         "desc": "Data science, ML modeling & visualization",
         "color": "#34d399",
         "tag": "Analytics",
         "loader": "get_data_science_team"
     },
-    "✍️ Content Studio": {
+    "Content Studio": {
         "desc": "Multi-source research & content generation",
         "color": "#f472b6",
         "tag": "Creative",
@@ -338,8 +338,8 @@ ENGINES = {
 with st.sidebar:
     st.markdown("""
     <div style="padding: 0 4px 16px;">
-        <div style="font-size:1.3rem; font-weight:700; color:#ffffff; letter-spacing:-0.5px;">⚡ Titan Suite</div>
-        <div style="font-size:0.75rem; color:#334155; font-family:'JetBrains Mono',monospace; margin-top:2px;">v1.0.0 · Production</div>
+        <div style="font-size:1.3rem; font-weight:700; color:#ffffff; letter-spacing:-0.5px;">Titan Suite</div>
+        <div style="font-size:0.75rem; color:#334155; font-family:'JetBrains Mono',monospace; margin-top:2px;">v1.0.0 | Production Release</div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -366,7 +366,7 @@ with st.sidebar:
     st.markdown('<div class="status-badge"><div class="status-dot"></div>System Online</div>', unsafe_allow_html=True)
 
     st.markdown("---")
-    show_hld = st.button("🗺️ Architecture Map", use_container_width=True)
+    show_hld = st.button("Architecture Map", use_container_width=True)
 
     st.markdown("---")
     st.markdown("""
@@ -380,20 +380,20 @@ with st.sidebar:
 
 # --- ARCHITECTURE MAP ---
 if show_hld:
-    st.markdown("## 🗺️ Titan Suite — Architecture")
+    st.markdown("## Titan Suite Architecture")
     col_back, _ = st.columns([1, 5])
     with col_back:
-        if st.button("⬅️ Back to Chat"):
+        if st.button("Back to Chat"):
             st.rerun()
 
     chart_code = """
     graph TD
-        User([👤 User]) --> Entry[⚡ Titan Master Entry]
+        User([User]) --> Entry[Titan Master Entry]
 
-        subgraph "🏛️ Titan Master Suite"
-            Entry --> Core[🧠 Core Intelligence]
-            Entry --> Analytics[📊 Analytics Pro]
-            Entry --> Content[✍️ Content Studio]
+        subgraph "Titan Master Suite"
+            Entry --> Core[Core Intelligence]
+            Entry --> Analytics[Analytics Pro]
+            Entry --> Content[Content Studio]
         end
 
         subgraph "Engine: Core Intelligence"
@@ -423,7 +423,7 @@ if show_hld:
             ContentLead --> MediumGen[Medium Article Generator]
         end
 
-        subgraph "🤖 Intelligence Layer"
+        subgraph "Intelligence Layer"
             Core --- NIM[NVIDIA NIM · llama-3.1-8b-instruct]
             Analytics --- NIM
             Content --- NIM
@@ -456,9 +456,9 @@ st.markdown(f"""
 if "current_project" not in st.session_state or st.session_state.current_project != selected_project:
     st.session_state.current_project = selected_project
     with st.spinner(f"Initializing {selected_project}..."):
-        if selected_project == "🧠 Core Intelligence":
+        if selected_project == "Core Intelligence":
             st.session_state.agent = get_advanced_agent()
-        elif selected_project == "📊 Analytics Pro":
+        elif selected_project == "Analytics Pro":
             st.session_state.agent = get_data_science_team()
         else:
             st.session_state.agent = get_content_team()
@@ -471,17 +471,17 @@ if "messages" not in st.session_state:
 # --- WELCOME BANNER (shown when no messages) ---
 if not st.session_state.messages:
     PROMPTS = {
-        "🧠 Core Intelligence": [
+        "Core Intelligence": [
             "Search the web for the latest AI breakthroughs in 2025",
             "Analyze and summarize this document for me",
             "Help me reason through a complex problem step by step",
         ],
-        "📊 Analytics Pro": [
+        "Analytics Pro": [
             "Load my CSV and give me a statistical summary",
             "Build a predictive model for my sales data",
             "Visualize trends and anomalies in my dataset",
         ],
-        "✍️ Content Studio": [
+        "Content Studio": [
             "Research and write a Medium article on RAG systems",
             "Find the latest Arxiv papers on LLM alignment",
             "Create a Twitter thread about multi-agent AI",
@@ -514,7 +514,7 @@ for message in st.session_state.messages:
 if st.session_state.messages:
     col1, col2 = st.columns([6, 1])
     with col2:
-        if st.button("🗑️ Clear", use_container_width=True):
+        if st.button("Clear Console", use_container_width=True):
             st.session_state.messages = []
             st.rerun()
 
@@ -539,7 +539,7 @@ if prompt := st.chat_input(f"Ask {selected_project} anything..."):
             response_container.markdown(full_response)
             
             # --- TITAN QUALITY AUDIT ---
-            with st.expander("🛡️ View Titan Quality Audit", expanded=False):
+            with st.expander("Titan Quality Audit Report", expanded=False):
                 col1, col2, col3 = st.columns(3)
                 # Calculate quality score based on length and tool indicators
                 score = 9.5 if len(full_response) > 800 else 8.5
@@ -548,12 +548,12 @@ if prompt := st.chat_input(f"Ask {selected_project} anything..."):
                 col3.metric("Tool Logic", "Optimal", "Efficient")
                 
                 st.markdown("---")
-                st.markdown("**🔍 Audit Summary:**")
-                st.success("✅ This response has been cross-verified against multi-agent reasoning paths. All sources are validated.")
+                st.markdown("**Quality Audit Summary:**")
+                st.success("Verification: This response has been cross-verified against multi-agent reasoning paths. All sources are validated.")
                 st.caption("Audit Engine: Titan-Guard-v1 | Logic: Agno-Verified")
 
             st.session_state.messages.append({"role": "assistant", "content": full_response})
 
         except Exception as e:
-            st.error(f"⚠️ Error: {str(e)}")
-            st.info("💡 Ensure your `NVIDIA_API_KEY` is set correctly in the `.env` file.")
+            st.error(f"Error: {str(e)}")
+            st.info("Ensure your `NVIDIA_API_KEY` is set correctly in the `.env` file.")
