@@ -1,0 +1,14 @@
+# --- TITAN SUITE GITIGNORE ---
+.env
+*.db
+database/
+outputs/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.joblib
+*.pkl
+node_modules/
+EOF

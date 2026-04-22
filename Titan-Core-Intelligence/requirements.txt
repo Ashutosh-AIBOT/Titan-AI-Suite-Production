@@ -1,0 +1,8 @@
+agno>=2.1.4
+openai>=2.3.0
+python-dotenv>=1.1.1
+duckduckgo-search>=6.0.0
+sqlalchemy>=2.0.0
+lancedb>=0.10.0
+pypdf>=4.0.0
+streamlit
