@@ -1,4 +1,4 @@
-# 🌌 Titan AI Suite: Unified Multi-Agent Ecosystem
+# Titan AI Suite: Unified Multi-Agent Ecosystem
 
 [![Framework: Agno](https://img.shields.io/badge/Framework-Agno-blueviolet)](https://agno.com)
 [![Model: NVIDIA NIM](https://img.shields.io/badge/Model-NVIDIA%20NIM-green)](https://build.nvidia.com)
@@ -8,26 +8,26 @@ Welcome to the **Titan AI Suite**, a high-end, production-grade consolidation of
 
 ---
 
-## 🎖 Acknowledgments & Credits
+## Acknowledgments & Credits
 
 This project was built as a deep-dive into the world of agentic AI. 
 - **Inspiration & Learning**: Huge credit to **CampusX**. I have learned immensely about the **Agno** framework and the potential of multi-agent systems through their high-quality educational content. This suite is a culmination of those learnings, optimized and consolidated into a professional-grade repository.
 
 ---
 
-## 🚀 Key Features
+## Key Features
 
-### 1. 🧠 Titan Core Intelligence (The Cognitive Brain)
+### 1. Titan Core Intelligence (The Cognitive Brain)
 *   **Autonomous Research**: Uses DuckDuckGo and local file tools for deep-web exploration.
 *   **Resilient Reasoning**: Built-in rate limiting and latency tracking to ensure stable operation.
 *   **Persistent Memory**: Uses SQLite to maintain session context across multiple runs.
 
-### 2. 📊 Titan Analytics Pro (Automated Data Science)
+### 2. Titan Analytics Pro (Automated Data Science)
 *   **Multi-Agent Pipeline**: A specialized team (Data Loader, Viz Agent, Coding Agent) that automates the entire ML lifecycle.
 *   **EDA & Visualization**: Automatically generates Matplotlib/Seaborn charts and provides statistical summaries.
 *   **Code Generation**: Writes and executes Python code for data cleaning and model training.
 
-### 3. ✍️ Titan Content Studio (Research & Content Engine)
+### 3. Titan Content Studio (Research & Content Engine)
 *   **Multi-Source Harvesting**: 9+ specialized agents scraping Arxiv, YouTube, Reddit, X (Twitter), Wikipedia, and HackerNews.
 *   **Article Generation**: Synthesizes research into professional, publication-ready Medium-style articles.
 *   **File Management**: Automatically saves drafts as Markdown files for easy export.
@@ -40,15 +40,15 @@ This project was built as a deep-dive into the world of agentic AI.
 ├── Titan-Core-Intelligence/  # Core reasoning & CLI agents
 ├── Titan-Analytics-Pro/      # ML & Data Science team orchestrators
 ├── Titan-Content-Studio/     # Research agents & Content pipelines
-├── titan_app.py              # 🚀 The Unified Streamlit Master UI
-├── notes.md                  # 📘 Comprehensive Interview Prep & Technical Notes
-├── HLD.md                    # 🗺️ High-Level Design & Architecture Diagrams
-└── requirements.txt          # 📦 Deployment dependencies
+├── titan_app.py              # The Unified Streamlit Master UI
+├── notes.md                  # Comprehensive Interview Prep & Technical Notes
+├── HLD.md                    # High-Level Design & Architecture Diagrams
+└── requirements.txt          # Deployment dependencies
 ```
 
 ---
 
-## 🏁 Quick Start
+## Quick Start
 
 ### 1. Environment Setup
 ```bash
@@ -73,7 +73,7 @@ python titan_suite.py ui
 
 ---
 
-## 🗺️ System Architecture
+## System Architecture
 For a deep-dive into the technical flow and agent interaction maps, please refer to the [High-Level Design (HLD.md)](./HLD.md) and the interactive **Architecture Map** available directly within the Streamlit UI.
 
 ---

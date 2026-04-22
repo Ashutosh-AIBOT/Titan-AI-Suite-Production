@@ -1,10 +1,10 @@
-# 🧠 Titan AI Suite: Interview Preparation & Technical Deep-Dive
+# Titan AI Suite: Interview Preparation & Technical Deep-Dive
 
 This document provides in-depth technical notes and interview-ready explanations for the **Titan AI Suite**. Use this to prepare for technical interviews or to document your architectural decisions for deployment.
 
 ---
 
-## 🚀 1. Master Suite Architecture (The Orchestrator)
+## 1. Master Suite Architecture (The Orchestrator)
 
 ### **Concept**
 The Titan Suite is a **Unified Multi-Agent Ecosystem** that consolidates three specialized AI engines (Core Intelligence, Analytics Pro, and Content Studio) into a single production-grade application.
@@ -22,7 +22,7 @@ The Titan Suite is a **Unified Multi-Agent Ecosystem** that consolidates three s
 
 ---
 
-## 🧠 2. Titan Core Intelligence (Autonomous Research)
+## 2. Titan Core Intelligence (Autonomous Research)
 
 ### **Concept**
 An autonomous research agent designed for deep-web exploration and local file management.
@@ -39,7 +39,7 @@ An autonomous research agent designed for deep-web exploration and local file ma
 
 ---
 
-## 📊 3. Titan Analytics Pro (Data Science Team)
+## 3. Titan Analytics Pro (Data Science Team)
 
 ### **Concept**
 A multi-agent team that automates the entire Data Science pipeline: from data loading to ML model training.
@@ -58,7 +58,7 @@ A multi-agent team that automates the entire Data Science pipeline: from data lo
 
 ---
 
-## ✍️ 4. Titan Content Studio (Research & Content Generation)
+## 4. Titan Content Studio (Research & Content Generation)
 
 ### **Concept**
 A specialized team for multi-source research (Arxiv, YouTube, Reddit, X) and automated Medium-style article generation.

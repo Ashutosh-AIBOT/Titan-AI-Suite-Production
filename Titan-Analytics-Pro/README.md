@@ -1,4 +1,4 @@
-# 📊 Titan-Analytics-Pro
+# Titan-Analytics-Pro
 
 An autonomous **Data Science & Analytics Suite** powered by Agno and NVIDIA Llama 3.1. This suite manages a team of specialized agents to automate the entire machine learning pipeline.
 
@@ -14,7 +14,7 @@ Inspired by the multi-agent orchestration patterns shared by the **CampusX** You
 - **REST API Deployment**: Built-in FastAPI integration for enterprise consumption.
 - **Observability**: Latency tracking and structured logs for every agentic decision.
 
-## 🚀 Execution
+## Execution
 1. Install requirements:
    ```bash
    pip install -r requirements.txt

@@ -28,7 +28,7 @@ graph TD
 
 ## 2. Component Breakdown
 
-### 🧠 Model Layer (The Brain)
+### Model Layer (The Brain)
 *   **Provider**: NVIDIA NIM
 *   **Model**: `meta/llama-3.1-8b-instruct` (Optimized for ultra-fast latency)
 *   **Role**: Handles high-speed reasoning, tool selection, and natural language generation.

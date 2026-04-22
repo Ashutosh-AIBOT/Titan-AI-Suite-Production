@@ -1,4 +1,4 @@
-# ✍️ Titan-Content-Studio
+# Titan-Content-Studio
 
 An autonomous **Research & Content Generation Factory**. This suite leverages a team of research specialists across Arxiv, YouTube, Reddit, and X to create high-impact articles.
 
@@ -14,7 +14,7 @@ This project architecture draws inspiration from the agentic research workflows 
 - **Enterprise Tooling**: Includes Gmail integration for automated newsletter drafting and outreach.
 - **Performance Monitoring**: Built-in tracking for API latency and token efficiency.
 
-## 🚀 Execution
+## Execution
 1. Install requirements:
    ```bash
    pip install -r requirements.txt

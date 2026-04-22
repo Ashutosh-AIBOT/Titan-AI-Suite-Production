@@ -1,4 +1,4 @@
-# 🧠 Titan-Core-Intelligence
+# Titan-Core-Intelligence
 
 A master toolkit for building production-grade agentic systems using **Agno** and **NVIDIA NIM**. 
 
@@ -7,7 +7,7 @@ A master toolkit for building production-grade agentic systems using **Agno** an
 This project was inspired by and built upon the foundations taught by the **CampusX** YouTube channel. Special thanks to the CampusX team for their incredible contributions to the AI community.
 ---
 
-## 🚀 Advanced Interview-Ready Features
+## Advanced Interview-Ready Features
 This version has been significantly enhanced beyond basic learning scripts to include:
 - **Rate Limiting**: Built-in protection to prevent API exhaustion.
 - **Latency Tracking**: Real-time performance monitoring of LLM response times.
@@ -31,6 +31,6 @@ This version has been significantly enhanced beyond basic learning scripts to in
    ```
 3. Set your NVIDIA key in `.env`.
 
-## 📘 Resources
+## Resources
 - `architecture_blueprint.py`: Enterprise-grade code snippets.
 - `Agno_Notes.pdf`: Comprehensive theory and curriculum guide.

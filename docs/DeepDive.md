@@ -1,10 +1,10 @@
-# 🗺️ Titan AI Suite: The Ultimate Technical Walkthrough
+# Titan AI Suite: The Ultimate Technical Walkthrough
 
 This document provides an exhaustive, in-depth explanation of every component, folder, and function within the **Titan AI Suite**, with a special focus on **Titan Analytics Pro**.
 
 ---
 
-## 🚀 1. The Titan Ecosystem: Overview
+## 1. The Titan Ecosystem: Overview
 The Titan Suite is divided into three "Engines," each designed for a specific industrial use case:
 
 1.  **Titan Core Intelligence**: The "Generalist." It handles autonomous web research and local file system management. It's the brain that coordinates simple tasks.
@@ -13,7 +13,7 @@ The Titan Suite is divided into three "Engines," each designed for a specific in
 
 ---
 
-## 📊 2. Deep Dive: Titan Analytics Pro
+## 2. Deep Dive: Titan Analytics Pro
 
 ### 📁 Folder Architecture & Their Purpose
 Inside `Titan-Analytics-Pro`, the folders are structured like a real-world Data Science project:
