@@ -24,3 +24,4 @@ openinference-instrumentation-crewai
 opentelemetry-sdk
 opentelemetry-exporter-otlp
 pyarrow==16.0.0
+protobuf==4.25.3
