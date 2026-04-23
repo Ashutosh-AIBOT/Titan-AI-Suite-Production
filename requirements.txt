@@ -23,3 +23,4 @@ arize-phoenix
 openinference-instrumentation-crewai
 opentelemetry-sdk
 opentelemetry-exporter-otlp
+pyarrow==16.0.0
